@@ -12,4 +12,4 @@ Go to <a href="https://nancytaen.github.io/"> Nancy Li's Portfolio Site </a>
 ``` npm run build ```
 
 ## Deploying
-``` git subtree push --prefix build/dist origin gh-pages ```
+``` git subtree push --prefix dist origin gh-pages ```

@@ -3,7 +3,7 @@
     <section class="mt-4 mb-4">
       <b-card overlay class="mt-5" img-src="img/header.jpg"
        title="Hello! I'm Nancy Li">
-       <em>A Backend & Full Stack Engineer interested in web development and machine learning </em>
+       <em>A Backend & Full Stack Engineer interested in software engineering and system design </em>
       </b-card>
     </section>
 

@@ -19,12 +19,12 @@
         <div>
             <h3>Entrepreneurial Experience</h3>
             <b-card v-for="entrep in entreps" :key="entrep.name" 
-              :img-src="entrep.img" img-right
               class="col-sm-9 col-lg-8 col-11 mx-auto text-left mb-2">
                 <b-card-title>
                     <a :href="entrep.url" target="_blank" class="text-dark mr-3">{{entrep.name}}</a>
                     <small class="text-muted">{{entrep.position}}</small>
                 </b-card-title>
+                <b-img :src="entrep.img" fluid right />
                 <ul class="list-inline">
                     <li class="list-inline-item"> <a :href="entrep.projUrl" target="_blank" class="text-secondary">{{entrep.project}}</a> |</li>
                     <li class="list-inline-item"> {{entrep.date}} |</li>
@@ -47,6 +47,18 @@ export default {
     data: function() {
         return {
             jobs: [
+                {title: 'Software Engineer Intern', company: 'Intel PSG', location: 'San Jose, CA',
+                 date: 'Aug 2021 - Present', 
+                 details: ['working on migration projects in an analogue design team',],
+                 compUrl: '/',
+                },
+
+                {title: 'Software Development Engineer Intern', company: 'Amazon', location: 'Toronto, ON, Canada',
+                 date: 'May - July 2021', 
+                 details: ['Migrated Fulfillment Centre (FC) Setup system a cloud native solution in Python',
+                 'Programmatically created and configured AWS resources (Lambda, Step Function, DynamoDB, API Gateway) CDK in TypeScript',],
+                 compUrl: '/',
+                },
                 {title: 'Full Stack Developer Intern', company: 'Uniaim Co., Ltd.', location: 'Tokyo, Japan',
                  date: 'May - August 2019', 
                  details: ['Developed a point management system for Japanese Basketball League', 
